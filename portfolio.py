@@ -10,7 +10,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for black background, dark blue accents, and white text
+# Custom CSS for beige and white aesthetic with dark brown text
 st.markdown("""
 <style>
     * {
@@ -20,28 +20,28 @@ st.markdown("""
     }
     
     body {
-        background: #000000;
-        color: #ffffff;
+        background: #f4eadf;
+        color: #2f241c;
     }
     
     .main {
-        background-color: #000000;
+        background-color: #f4eadf;
     }
     
     .navbar {
-        background: linear-gradient(90deg, #020817 0%, #082f63 100%);
+        background: linear-gradient(90deg, #ffffff 0%, #ead8c4 100%);
         padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(8,47,99,0.35);
+        box-shadow: 0 2px 10px rgba(96,62,38,0.18);
     }
     
     .hero-section {
-        background: linear-gradient(135deg, #020817 0%, #082f63 100%);
-        color: white;
+        background: linear-gradient(135deg, #ffffff 0%, #ead8c4 100%);
+        color: #2f241c;
         padding: 4rem 2rem;
         text-align: center;
         border-radius: 10px;
         margin-bottom: 3rem;
-        box-shadow: 0 10px 30px rgba(8, 47, 99, 0.45);
+        box-shadow: 0 10px 30px rgba(96, 62, 38, 0.18);
     }
     
     .hero-section h1 {
@@ -70,49 +70,49 @@ st.markdown("""
         align-items: center;
         gap: 0.5rem;
         padding: 0.75rem 1.5rem;
-        background-color: rgba(255,255,255,0.2);
-        color: white;
+        background-color: rgba(122,79,42,0.08);
+        color: #4a2f1f;
         text-decoration: none;
         border-radius: 5px;
         transition: all 0.3s ease;
-        border: 2px solid rgba(255,255,255,0.3);
+        border: 2px solid rgba(122,79,42,0.22);
         font-weight: 500;
     }
     
     .social-btn:hover {
-        background-color: rgba(255,255,255,0.3);
-        border-color: white;
+        background-color: rgba(122,79,42,0.14);
+        border-color: #7a4f2a;
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     
     .section-title {
-        color: #ffffff;
+        color: #3a261a;
         font-size: 2.2rem;
         font-weight: 700;
         margin: 3rem 0 2rem 0;
         padding-bottom: 1rem;
-        border-bottom: 3px solid #0b4ea2;
+        border-bottom: 3px solid #7a4f2a;
         display: inline-block;
     }
     
     .project-card {
-        background: #020817;
+        background: #ffffff;
         border-radius: 10px;
         padding: 2rem;
         margin-bottom: 1.5rem;
-        box-shadow: 0 4px 15px rgba(8,47,99,0.25);
-        border-left: 5px solid #0b4ea2;
+        box-shadow: 0 4px 15px rgba(96,62,38,0.14);
+        border-left: 5px solid #7a4f2a;
         transition: all 0.3s ease;
     }
     
     .project-card:hover {
-        box-shadow: 0 8px 25px rgba(8,47,99,0.4);
+        box-shadow: 0 8px 25px rgba(96,62,38,0.2);
         transform: translateY(-5px);
     }
     
     .project-card h3 {
-        color: #7db7ff;
+        color: #5c3925;
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
     }
@@ -125,8 +125,8 @@ st.markdown("""
     }
     
     .tag {
-        background-color: #082f63;
-        color: #ffffff;
+        background-color: #ead8c4;
+        color: #4a2f1f;
         padding: 0.3rem 0.8rem;
         border-radius: 20px;
         font-size: 0.85rem;
@@ -141,31 +141,31 @@ st.markdown("""
     }
     
     .skill-category {
-        background: #020817;
+        background: #ffffff;
         padding: 1.5rem;
         border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(8,47,99,0.25);
-        border-top: 4px solid #0b4ea2;
+        box-shadow: 0 2px 8px rgba(96,62,38,0.14);
+        border-top: 4px solid #7a4f2a;
     }
     
     .skill-category h4 {
-        color: #7db7ff;
+        color: #5c3925;
         margin-bottom: 1rem;
         font-size: 1.1rem;
     }
     
     .skill-item {
-        background-color: #061a38;
+        background-color: #f1e3d3;
         padding: 0.5rem 0.8rem;
         margin-bottom: 0.5rem;
         border-radius: 4px;
-        color: #ffffff;
+        color: #2f241c;
         font-size: 0.9rem;
     }
     
     .footer {
-        background: linear-gradient(90deg, #020817 0%, #082f63 100%);
-        color: white;
+        background: linear-gradient(90deg, #ffffff 0%, #ead8c4 100%);
+        color: #2f241c;
         text-align: center;
         padding: 2rem;
         margin-top: 4rem;
@@ -174,21 +174,21 @@ st.markdown("""
     
     .divider {
         height: 2px;
-        background: linear-gradient(90deg, transparent, #0b4ea2, transparent);
+        background: linear-gradient(90deg, transparent, #7a4f2a, transparent);
         margin: 2rem 0;
     }
     
     .contact-box {
-        background: #020817;
+        background: #ffffff;
         border-radius: 10px;
         padding: 2rem;
-        box-shadow: 0 4px 15px rgba(8,47,99,0.25);
-        border-left: 5px solid #0b4ea2;
+        box-shadow: 0 4px 15px rgba(96,62,38,0.14);
+        border-left: 5px solid #7a4f2a;
         margin-top: 2rem;
     }
     
     .contact-box h3 {
-        color: #7db7ff;
+        color: #5c3925;
         margin-bottom: 1rem;
     }
     
@@ -200,7 +200,7 @@ st.markdown("""
     }
     
     .contact-item strong {
-        color: #ffffff;
+        color: #4a2f1f;
         min-width: 100px;
     }
 
@@ -212,30 +212,30 @@ st.markdown("""
     [data-testid="stHeader"],
     [data-testid="stMain"],
     [data-testid="stVerticalBlock"] {
-        background: #000000 !important;
-        background-color: #000000 !important;
-        color: #ffffff;
+        background: #f4eadf !important;
+        background-color: #f4eadf !important;
+        color: #2f241c;
     }
 
     .navbar,
     .hero-section,
     .footer {
-        background: linear-gradient(90deg, #020817 0%, #082f63 100%) !important;
-        box-shadow: 0 4px 20px rgba(8, 47, 99, 0.35);
+        background: linear-gradient(90deg, #ffffff 0%, #ead8c4 100%) !important;
+        box-shadow: 0 4px 20px rgba(96, 62, 38, 0.18);
     }
 
     .section-title {
-        color: #ffffff;
-        border-bottom-color: #0b4ea2;
+        color: #3a261a;
+        border-bottom-color: #7a4f2a;
     }
 
     .project-card,
     .skill-category,
     .contact-box {
-        background: #020817 !important;
-        color: #ffffff;
-        box-shadow: 0 4px 15px rgba(8, 47, 99, 0.25);
-        border-color: #0b4ea2;
+        background: #ffffff !important;
+        color: #2f241c;
+        box-shadow: 0 4px 15px rgba(96, 62, 38, 0.14);
+        border-color: #7a4f2a;
     }
 
     .project-card h3,
@@ -243,26 +243,26 @@ st.markdown("""
     .contact-box h3,
     .contact-item strong,
     .contact-item a {
-        color: #7db7ff;
+        color: #5c3925;
     }
 
     .project-card p {
-        color: #e5eefc;
+        color: #3a261a;
     }
 
     .tag {
-        background-color: #082f63;
-        color: #ffffff;
-        border: 1px solid #0b4ea2;
+        background-color: #ead8c4;
+        color: #4a2f1f;
+        border: 1px solid #7a4f2a;
     }
 
     .skill-item {
-        background-color: #061a38;
-        color: #ffffff;
+        background-color: #f1e3d3;
+        color: #2f241c;
     }
 
     .divider {
-        background: linear-gradient(90deg, transparent, #0b4ea2, transparent);
+        background: linear-gradient(90deg, transparent, #7a4f2a, transparent);
     }
 </style>
 """, unsafe_allow_html=True)
